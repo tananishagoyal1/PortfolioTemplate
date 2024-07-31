@@ -209,9 +209,9 @@ img {
 
 .home__container {
   position: relative;
-  height: calc(100vh - ($header-height));
   grid-template-rows: repeat(2, max-content);
   align-content: space-around;
+  height: calc(100vh - ($header-height));
 }
 
 .home__data {
@@ -416,7 +416,7 @@ img {
   letter-spacing: 0.25rem;
 }
 
-.services__container {
+.project_container {
   display: grid;
   row-gap: 1.5rem;
 }
@@ -580,10 +580,10 @@ img {
     height: 400px;
   }
   .home__container,
-  .services__container {
+  .project_container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .services__container {
+  .project_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -654,7 +654,7 @@ img {
     width: 380px;
     height: 700px;
   }
-  .services__container {
+  .project_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
