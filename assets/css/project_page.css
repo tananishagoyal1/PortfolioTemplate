@@ -1,0 +1,79 @@
+/* Reset default styles and set a default font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    /* background-color: #2A3749; */
+    text-align: -webkit-center;
+  }
+  .project_showcase{
+
+      max-width: 95%;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-style: solid 10px black;
+      align-content: center;
+  }
+  .container {
+    flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .project_showcase {
+        
+      flex-direction: column;
+    }
+    .container {
+        
+      max-width: 35rem;
+    }
+  
+    .image-column, .text-column {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 400px ) {
+    .container {
+        
+      flex-direction: column;
+    }
+    .image-column{
+        max-height: 70%;
+    }
+  
+    .image-column, .text-column {
+      margin-bottom: 10px;
+    }
+  }
+  
