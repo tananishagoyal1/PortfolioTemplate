@@ -35,6 +35,9 @@
     padding: 10px;
   }
   
+  .image-column  {
+    align-self: center;
+  }
   .image-column img {
     width: 100%;
     height: auto;
@@ -64,12 +67,16 @@
   }
   
   @media (max-width: 400px ) {
-    .container {
+      .container {
+          
+        flex-direction: column;
+      }
+    .container_reverse {
         
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     .image-column{
-        max-height: 70%;
+        max-height: 60%;
     }
   
     .image-column, .text-column {
